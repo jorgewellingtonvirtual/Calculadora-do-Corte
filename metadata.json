@@ -1,0 +1,5 @@
+{
+  "name": "Calculadora de Metas",
+  "description": "Uma aplicação para calcular metas de faturamento mensais com base no total, período e dias úteis. A calculadora divide o valor total da meta pelo número de dias úteis no período selecionado e apresenta um detalhamento mensal.",
+  "requestFramePermissions": []
+}

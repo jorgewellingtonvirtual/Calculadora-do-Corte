@@ -1,0 +1,66 @@
+No Google AI Studio (aistudio.google.com), os "projetos de aplicativo" são criados no modo Build (ou "Criar apps com Gemini"). Eles geram um app web completo (HTML + JS + CSS) que roda no navegador, mas você pode baixar tudo e rodar localmente ou em qualquer outro servidor. É super simples!
+Passo a passo para transferir e rodar em outro local
+
+Abra seu projeto
+
+Entre em https://aistudio.google.com
+Vá na aba Build (ou “Apps” no menu esquerdo)
+Clique no app que você quer transferir.
+
+
+Baixe o projeto completo
+
+No canto superior direito da tela do app, clique no botão ⬇️ Download (ou “Download project”).
+Ele baixa uma pasta ZIP com:
+
+index.html
+app.js (ou main.ts)
+style.css
+.env (com a chave da API)
+package.json (se usar Node)
+
+
+
+
+Instale o que precisa no computador novo
+
+Descompacte a pasta.
+Abra o terminal dentro dela e rode:
+textnpm install
+(Se não tiver Node.js, baixe grátis em nodejs.org → installer “LTS”).
+
+
+Rode localmente
+
+No mesmo terminal:
+textnpm start
+
+Abre automaticamente no navegador: http://localhost:3000
+Pronto! Seu app está rodando 100% offline (exceto as chamadas à API Gemini, que precisam internet).
+
+
+Quer rodar sem Node? (só arquivos estáticos)
+
+Abra o arquivo index.html direto no Chrome/Edge clicando duas vezes.
+Funciona na maioria dos casos simples.
+
+
+
+Dicas extras
+
+Trocar de conta/computador: é só fazer login com a mesma conta Google e repetir o download.
+Compartilhar com alguém: mande o ZIP por e-mail ou Drive. A pessoa só precisa do Node.js.
+Deploy grátis em outro lugar:
+
+Vercel: vercel (1 comando)
+nhiều  - Netlify: arraste a pasta no site netlify.com/drop
+GitHub Pages: crie repo → arraste arquivos.
+
+
+
+Se o seu projeto for só um prompt (não um app)
+
+Clique em Get code → Python / cURL / Node.js
+Copie o código e cole no VS Code ou Jupyter no outro PC.
+
+Qualquer dúvida (ex: erro no npm start), cole aqui o erro que eu te ajudo na hora! 🚀
